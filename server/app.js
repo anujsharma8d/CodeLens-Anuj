@@ -9,6 +9,7 @@ import aiRoutes from "./modules/ai/routes.js";
 const app = express();
 
 const allowedOrigins = [
+  process.env.CLIENT_URL,
   process.env.CLIENT_URI,
   "http://localhost:5173"
 ].filter(Boolean);
