@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import ExploreHero from "../components/explore/ExploreHero";
 import AIExplanation from "../components/explore/AIExplanation";
 import FeatureGrid from "../components/explore/FeatureGrid";
@@ -14,6 +15,28 @@ import SubscribeNewsletter from "../components/explore/SubscribeNewsletter";
 import FinalCTA from "../components/explore/FinalCTA";
 
 export default function ExplorePage() {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="w-full bg-white flex flex-col">
       <ExploreHero />
@@ -30,6 +53,25 @@ export default function ExplorePage() {
       <FAQSection />
       <SubscribeNewsletter />
       <FinalCTA />
+
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 w-12 h-12 bg-black text-white flex items-center justify-center cursor-pointer z-50 border-2 border-black hover:bg-white hover:text-black transition-colors duration-200"
+          aria-label="Scroll to top"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={3}
+          >
+            <path strokeLinecap="square" strokeLinejoin="miter" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+      )}
     </div>
   );
 }
