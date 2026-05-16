@@ -147,6 +147,7 @@ export default function SignupPage() {
               <div className="min-h-[16px]">
                 {email && !isEmailValid && (
                   <p
+                    id="email-error"
                     role="alert"
                     className="text-xs font-black uppercase tracking-widest text-red-600"
                   >
