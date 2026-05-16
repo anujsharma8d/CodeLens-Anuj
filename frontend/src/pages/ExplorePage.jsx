@@ -13,7 +13,6 @@ import OpenSourceVision from "../components/explore/OpenSourceVision";
 import FAQSection from "../components/explore/FAQSection";
 import SubscribeNewsletter from "../components/explore/SubscribeNewsletter";
 import FinalCTA from "../components/explore/FinalCTA";
-
 export default function ExplorePage() {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -72,6 +71,7 @@ export default function ExplorePage() {
           </svg>
         </button>
       )}
+       
     </div>
   );
 }
