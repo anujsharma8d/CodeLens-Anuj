@@ -69,6 +69,12 @@ const userSchema = new mongoose.Schema({
   metadata: {
     onboardingCompleted: { type: Boolean, default: false },
     tags: [String]
+  },
+
+  // Dashboard AI Summary Cache
+  dashboardSummary: {
+    content: { type: String, default: null },
+    lastGeneratedAt: { type: Date, default: null }
   }
 }, { timestamps: true });
 
