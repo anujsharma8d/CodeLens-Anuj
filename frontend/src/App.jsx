@@ -17,6 +17,7 @@ import ContestLeetCodePage from "./pages/ContestLeetCodePage";
 import ContestAtCoderPage from "./pages/ContestAtCoderPage";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPage from "./pages/PrivacyPage";
+import FAQPage from "./pages/FAQPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ForgotPassword from "./components/auth/ForgotPassword";
 import AccountCenterPage from "./pages/AccountCenterPage";

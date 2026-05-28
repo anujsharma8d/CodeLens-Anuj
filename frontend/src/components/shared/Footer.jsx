@@ -35,6 +35,7 @@ export default function Footer() {
               {[
                 { to: "/dashboard", label: "Dashboard" },
                 { to: "/explore", label: "Explore" },
+                { to: "/faq", label: "FAQ" },
                 { to: "/codeforces", label: "Codeforces" },
               ].map((l) => (
                 <Link
