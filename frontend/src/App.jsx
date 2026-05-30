@@ -10,6 +10,7 @@ import CodeforcesPage from "./pages/CodeforcesPage";
 import PracticePage from "./pages/PracticePage";
 
 import ApexAIPage from "./pages/ApexAIPage";
+import ApexWorkspacePage from "./pages/ApexWorkspacePage";
 import AlgoVersePage from "./pages/AlgoVersePage";
 import ContestCodeforcesPage from "./pages/ContestCodeforcesPage";
 import ContestCodeChefPage from "./pages/ContestCodeChefPage";
@@ -88,6 +89,14 @@ export default function App() {
             <Route path="/practice" element={<PracticePage />} />
 
             <Route path="/apex-ai" element={<ApexAIPage />} />
+            <Route 
+              path="/apex-ai/workspace" 
+              element={
+                <ProtectedRoute>
+                  <ApexWorkspacePage />
+                </ProtectedRoute>
+              } 
+            />
             <Route path="/algoverse" element={<AlgoVersePage />} />
             <Route path="/contests/codeforces" element={<ContestCodeforcesPage />} />
             <Route path="/contests/codechef" element={<ContestCodeChefPage />} />
