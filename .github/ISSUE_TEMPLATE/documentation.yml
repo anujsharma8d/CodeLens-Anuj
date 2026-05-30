@@ -1,12 +1,24 @@
 name: Documentation Improvement
 description: Suggest a clarification, correction, or enhancement to the project documentation.
 title: "[Docs]: "
+labels: ["type:documentation"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for helping improve the documentation.
         Please point us to the exact docs area and explain how it can be made clearer or more accurate.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Before submitting
+      description: Please confirm the following before opening the issue.
+      options:
+        - label: I have searched existing issues to make sure this is not a duplicate.
+          required: true
+        - label: I have read the contribution guidelines.
+          required: true
 
   - type: input
     id: documentation-summary
@@ -50,5 +62,3 @@ body:
       label: Screenshots or references
       description: Add screenshots, examples from other docs, or any supporting references if applicable.
       placeholder: Paste links or attach screenshots here
-    validations:
-      required: false

@@ -1,12 +1,24 @@
 name: Feature Request
 description: Propose a new feature or enhancement with enough detail for planning and implementation.
 title: "[Feature]: "
+labels: ["type:feature"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for sharing your idea.
         Please describe the problem and the proposed solution as clearly as possible.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Before submitting
+      description: Please confirm the following before opening the issue.
+      options:
+        - label: I have searched existing issues and discussions to make sure this idea is not already covered.
+          required: true
+        - label: I have read the contribution guidelines.
+          required: true
 
   - type: textarea
     id: problem-statement
@@ -30,7 +42,7 @@ body:
     id: alternatives-considered
     attributes:
       label: Alternative solutions considered
-      description: Tell us about other approaches you considered. If none, write N/A.
+      description: Tell us about other approaches you considered and why they are less suitable.
       placeholder: List alternatives, tradeoffs, or why other options are less suitable
     validations:
       required: true
@@ -50,8 +62,6 @@ body:
       label: References or mockups
       description: Share links, screenshots, diagrams, examples, or mockups if available.
       placeholder: Paste references, mockups, or related examples here
-    validations:
-      required: false
 
   - type: textarea
     id: additional-context
@@ -59,5 +69,3 @@ body:
       label: Additional context
       description: Include technical notes, dependencies, risks, or anything else relevant.
       placeholder: Add any extra context here
-    validations:
-      required: false

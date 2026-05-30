@@ -1,12 +1,24 @@
 name: Bug Report
 description: Report a reproducible problem to help maintainers investigate and fix it.
 title: "[Bug]: "
+labels: ["type:bug"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to report a bug.
         Please fill in the details below so we can reproduce the issue quickly.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Before submitting
+      description: Please confirm the following before opening the issue.
+      options:
+        - label: I have searched existing issues to make sure this is not a duplicate.
+          required: true
+        - label: I have read the contribution guidelines.
+          required: true
 
   - type: input
     id: bug-summary
@@ -22,7 +34,7 @@ body:
     attributes:
       label: Steps to reproduce
       description: Tell us exactly how to reproduce the issue.
-      placeholder: |
+      value: |
         1. Go to ...
         2. Click on ...
         3. Enter ...
@@ -62,7 +74,7 @@ body:
     attributes:
       label: Browser and device information
       description: Share the environment where the issue occurred.
-      placeholder: |
+      value: |
         Browser:
         Browser version:
         Operating system:

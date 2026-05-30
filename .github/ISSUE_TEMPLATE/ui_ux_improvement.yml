@@ -1,12 +1,24 @@
 name: UI/UX Improvement
 description: Propose an interface or usability enhancement with visual, responsive, and accessibility context.
 title: "[UI/UX]: "
+labels: ["type:ui/ux"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for proposing a UI/UX improvement.
         Please include enough detail for maintainers to understand both the current issue and the intended experience.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Before submitting
+      description: Please confirm the following before opening the issue.
+      options:
+        - label: I have searched existing issues to make sure this is not a duplicate.
+          required: true
+        - label: I have read the contribution guidelines.
+          required: true
 
   - type: textarea
     id: current-ui-ux-issue
@@ -32,8 +44,6 @@ body:
       label: Screenshots or mockups
       description: Attach screenshots, annotated examples, recordings, wireframes, or mockups if available.
       placeholder: Paste links or attach supporting visuals here
-    validations:
-      required: false
 
   - type: textarea
     id: responsive-considerations
@@ -59,5 +69,3 @@ body:
       label: Additional implementation notes
       description: Include technical constraints, component references, related pages, or rollout notes.
       placeholder: Add any extra implementation context here
-    validations:
-      required: false
