@@ -320,12 +320,15 @@ export default function CodeforcesPage() {
   // ── Loading ──────────────────────────────────────────────────────────────
   if (loading) {
     return (
+      <main>
+        <title>Codeforces - CodeLens</title>
       <div className="min-h-screen flex items-center justify-center bg-white">
         <div className="flex flex-col items-center gap-6">
           <div className="w-16 h-16 border-[6px] border-black border-t-transparent animate-spin" />
           <p className="font-black uppercase tracking-widest text-lg">Loading Codeforces Data...</p>
         </div>
       </div>
+      </main>
     );
   }
 
