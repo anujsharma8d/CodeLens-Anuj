@@ -90,7 +90,7 @@ const Contact = () => {
                     </div>
 
                     <div className="border-4 border-black bg-white p-6 shadow-[6px_6px_0_0_rgba(0,0,0,1)] sm:p-8 sm:shadow-[10px_10px_0_0_rgba(0,0,0,1)]">
-                        <h1 className="text-2xl font-black uppercase leading-none tracking-tight text-black sm:text-2xl lg:text-2xl">Send us a message</h1>
+                        <h2 className="text-2xl font-black uppercase leading-none tracking-tight text-black sm:text-2xl lg:text-2xl">Send us a message</h2>
                         <p className="text-base font-bold leading-relaxed text-black sm:text-lg">
                             Fill out the form below and we will get back to you soon
                         </p>
