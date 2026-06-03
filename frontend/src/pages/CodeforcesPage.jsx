@@ -333,6 +333,8 @@ export default function CodeforcesPage() {
   if (!isConnected) {
     return (
       <>
+      <main>
+        <title>Codeforces - CodeLens</title>
         <NotConnectedPage onOpenModal={() => setModalOpen(true)} />
         <VerifyModal
           isOpen={modalOpen}
@@ -343,6 +345,7 @@ export default function CodeforcesPage() {
           connectLoading={connectLoading}
           connectError={connectError}
         />
+          </main>
       </>
     );
   }

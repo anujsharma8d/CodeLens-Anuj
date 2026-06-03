@@ -25,6 +25,8 @@ function Skeleton() {
 // ── Not connected ─────────────────────────────────────────────────────────────
 function NotConnected() {
   return (
+    <main>
+      <title>GitHub Intelligence - CodeLens</title>
     <div className="w-full flex-1 bg-white flex items-center justify-center px-4 py-20">
       <div className="max-w-md w-full border-[4px] border-black p-10 text-center shadow-[12px_12px_0_0_rgba(0,0,0,1)]">
         <div className="text-7xl font-black text-gray-100 mb-6 select-none">GH</div>
@@ -38,6 +40,7 @@ function NotConnected() {
         </Link>
       </div>
     </div>
+    </main>
   );
 }
 
