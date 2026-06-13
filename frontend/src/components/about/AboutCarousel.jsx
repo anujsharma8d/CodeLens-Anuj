@@ -69,7 +69,7 @@ export default function AboutCarousel() {
         }
       }}
     >
-      <div className="relative bg-black text-white rounded-3xl p-10 md:p-14 overflow-hidden min-h-[320px]">
+      <div className="relative bg-black text-white  p-10 md:p-14 overflow-hidden min-h-[320px]">
 
         <div
           aria-hidden="true"

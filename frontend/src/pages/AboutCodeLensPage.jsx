@@ -28,32 +28,33 @@ const problems = [
     "Community",
   ];
 
+  
   const features = [
-    {
-      title: "Learning Inconsistency",
-      desc: "Learners often struggle to maintain a consistent learning routine. CodeLens brings learning tools, coding practice, and progress tracking into a single workflow to encourage long-term consistency.",
-    },
-    {
-      title: "Lack of Structured Growth",
-      desc: "Without clear roadmaps, progress becomes difficult to measure. CodeLens helps learners follow organized pathways and build skills step by step.",
-    },
-    {
-      title: "GitHub Intelligence",
-      desc: "Tracking growth across multiple platforms is challenging. Features like GitHub Intelligence and learning analytics help users understand their development journey.",
-    },
-    {
-      title: "Competitive Programming",
-      desc: "Track your coding progress, participate in contests, and strengthen problem-solving skills through structured practice. CodeLens helps learners stay consistent while monitoring their growth across competitive programming platforms.",
-    },
-    {
-      title: "AI Assistance",
-      desc: "Leverage intelligent tools that provide guidance, learning support, and productivity enhancements throughout your journey. APEX AI is designed to help learners overcome obstacles and accelerate skill development.",
-    },
-    { 
-      title: "Community Driven",
-      desc: "CodeLens evolves through collaboration, feedback, and contributions from learners and developers worldwide. By fostering an active community, the platform continuously improves and grows alongside its users.",
-    },
-  ];
+  {
+    title: "Learning Analytics",
+    desc: "Track your learning journey, monitor progress, and gain meaningful insights into your growth. CodeLens helps learners understand their strengths and identify areas that need improvement.",
+  },
+  {
+    title: "Structured Roadmaps",
+    desc: "Follow clear learning pathways designed to help you build skills step by step. Structured guidance makes it easier to stay focused and achieve long-term goals.",
+  },
+  {
+    title: "GitHub Intelligence",
+    desc: "Analyze repositories, contribution activity, and development patterns. GitHub Intelligence helps users better understand their coding habits and project growth.",
+  },
+  {
+    title: "Competitive Programming",
+    desc: "Track coding progress, participate in contests, and strengthen problem-solving skills through structured practice. CodeLens helps learners stay consistent while monitoring their competitive programming journey.",
+  },
+  {
+    title: "AI Assistance",
+    desc: "Leverage intelligent tools that provide guidance, learning support, and productivity enhancements throughout your journey. APEX AI is designed to help learners overcome obstacles and accelerate skill development.",
+  },
+  {
+    title: "Community Driven",
+    desc: "CodeLens evolves through collaboration, feedback, and contributions from learners and developers worldwide. By fostering an active community, the platform continuously improves and grows alongside its users.",
+  },
+];
 export default function AboutCodeLensPage() {
   return (
     <div className="w-full overflow-hidden">
@@ -203,34 +204,40 @@ export default function AboutCodeLensPage() {
 
       {/* MISSION VISION */}
       <section className="py-16 px-6">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10">
-          <p className="uppercase tracking-[0.3em] text-xs text-zinc-500 mb-3">
-            03 /
-          </p>
-          <div className="border rounded-none p-10">
-            <h2 className="text-6xl font-black mb-6">
-              Our Mission
-            </h2>
+  <div className="max-w-7xl mx-auto">
 
-            <p className="text-zinc-600 leading-8">
-              To create an accessible, structured, and engaging learning
-              environment that enables learners to achieve consistent growth.
-            </p>
-          </div>
+    <p className="uppercase tracking-[0.3em] text-xs text-zinc-500 mb-3">
+      03 /
+    </p>
 
-          <div className="bg-black text-white rounded-none p-10">
-            <h2 className="text-6xl font-black mb-6">
-              Our Vision
-            </h2>
+    <div className="grid lg:grid-cols-2 gap-10">
 
-            <p className="text-zinc-300 leading-8">
-              To build a global ecosystem where every learner can track
-              progress, unlock opportunities, and achieve their potential.
-            </p>
-          </div>
+      <div className="border rounded-none p-10">
+        <h2 className="text-6xl font-black mb-6">
+          Our Mission
+        </h2>
 
-        </div>
-      </section>
+        <p className="text-zinc-600 leading-8">
+          To create an accessible, structured, and engaging learning
+          environment that enables learners to achieve consistent growth.
+        </p>
+      </div>
+
+      <div className="bg-black text-white rounded-none p-10">
+        <h2 className="text-6xl font-black mb-6">
+          Our Vision
+        </h2>
+
+        <p className="text-zinc-300 leading-8">
+          To build a global ecosystem where every learner can track
+          progress, unlock opportunities, and achieve their potential.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* FEATURES */}
       <section className="bg-zinc-50 py-16 px-6">
