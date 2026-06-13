@@ -402,10 +402,6 @@ export default function Navbar() {
           <Link to="/faq" className={navLinkCls("/faq")}>
             FAQ
           </Link>
-          
-          <Link to="/about" className={navLinkCls("/about")}>
-            About
-          </Link>
 
           {isAuthenticated && (
             <Link to="/codeforces" className={navLinkCls("/codeforces")}>
@@ -597,9 +593,6 @@ export default function Navbar() {
             </Link>
             <Link to="/faq" onClick={closeMenu} className={mobileLinkCls}>
               FAQ <span className="text-zinc-300 text-sm">→</span>
-            </Link>
-            <Link to="/about" onClick={closeMenu} className={mobileLinkCls}>
-              About <span className="text-zinc-300 text-sm">→</span>
             </Link>
             <Link to="/contact" onClick={closeMenu} className={mobileLinkCls}>
               Contact Us <span className="text-zinc-300 text-sm">→</span>

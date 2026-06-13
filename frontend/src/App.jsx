@@ -117,11 +117,7 @@ export default function App() {
             <Route path="/bug-reports" element={<BugReportsPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/contact" element={<Contact />} />
-<<<<<<< HEAD
             <Route path="/about" element={<About />} />
-=======
-            <Route path="/about" element={<AboutCodeLensPage />} />
->>>>>>> upstream/main
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </MainLayout>

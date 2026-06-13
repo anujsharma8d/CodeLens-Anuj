@@ -14,7 +14,7 @@ const WhyCodelens = () => {
                     <div className='flex flex-col justify-center items-center gap-1 lg:gap-3 w-64'>
                         <CircleUserRound size={64}/>
                         <h2 className='text-2xl sm:text-3xl font-bold leading-none tracking-tight text-black text-center'>One Profile</h2>
-                        <p className='text-2xl text-center max-w-[220px]'>All yor progress in one place.</p>
+                        <p className='text-2xl text-center max-w-[220px]'>All your progress in one place.</p>
                     </div>
                     <div className='border hidden lg:block'></div>
                     <div className='flex flex-col justify-center items-center gap-1 lg:gap-3 w-64'>
